@@ -15,7 +15,7 @@
 ## UI Preview
 <p float="left">
   <img src="homepage.png" width="200"/>
-  <img src="PetList.png" width="200"/>
+  <img src="petlist.png" width="200"/>
   <img src="Record.png" width="200"/>
   <img src="Reminder.png" width="200"/>
   <img src="Weight.png" width="200">
