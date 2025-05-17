@@ -27,7 +27,7 @@
 - ViewModel + LiveData + SQLite
 - RecyclerView + Navigation Component
 - MutableLiveData for UI state management
-- MutableLiveData for UI state management
+- System Camera via ActivityResult API
 
 ## Getting Started
 
