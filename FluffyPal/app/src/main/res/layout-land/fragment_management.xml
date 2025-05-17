@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ManagementFragment">
+
+    <!-- no weight data-->
+    <LinearLayout
+        android:id="@+id/emptyManagement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="100dp">
+
+        <ImageView
+            android:id="@+id/animal_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/cat"
+            android:contentDescription="@string/start_pet_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No weight records yet"
+            android:textSize="20sp"
+            app:fontFamily="@font/quicksand_medium"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+    <!-- with weight data-->
+    <!-- choose pet-->
+    <LinearLayout
+        android:id="@+id/with_weight_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/choose_pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <!-- most recent weight -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/latestWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5kg"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/quicksand_bold" />
+
+                <TextView
+                    android:id="@+id/latest_record_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2025-05-05"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/quicksand_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/weight_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 0.5kg"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/quicksand_bold" />
+
+                <TextView
+                    android:id="@+id/last_weightDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Compare to last record"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/quicksand_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- weight list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/weightRecordList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="105dp"/>
+    </LinearLayout>
+</FrameLayout>

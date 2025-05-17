@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetAdd1Fragment"
+    android:background="#DEFFE6C6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_pet"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            app:fontFamily="@font/quicksand_bold"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_dog"
+                    android:tag="dog"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dog"
+                    android:contentDescription="@string/dog"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dog"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_cat"
+                    android:tag="cat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/catcat"
+                    android:contentDescription="@string/cat"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_rabbit"
+                    android:tag="rabbit"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rabbit"
+                    android:contentDescription="@string/rabbit"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabbit"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_hamster"
+                    android:tag="hamster"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hamster"
+                    android:contentDescription="@string/hamster"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hamster"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_bird"
+                    android:tag="bird"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bird"
+                    android:contentDescription="@string/bird"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bird"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_fish"
+                    android:tag="fish"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fish"
+                    android:contentDescription="@string/fish"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fish"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/image_fluffy"
+                    android:tag="Others"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fluffy"
+                    android:contentDescription="@string/others"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:background="?selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/others"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/quicksand" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="120dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_pet_back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/back"
+                android:textSize="25sp"
+                android:layout_weight="0.3"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.4" />
+
+            <Button
+                android:id="@+id/add_pet_next1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="@string/next"
+                android:textSize="25sp"
+                android:layout_weight="0.3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

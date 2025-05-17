@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Select a Pet"
+            android:textSize="20sp"
+            app:fontFamily="@font/quicksand" />
+
+        <RadioGroup
+            android:id="@+id/petRadioGroupR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder Title"
+            android:textSize="20sp"
+            app:fontFamily="@font/quicksand" />
+
+        <EditText
+            android:id="@+id/reminderTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Enter Reminder Title"
+            android:inputType="text"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textSize="20sp"
+            app:fontFamily="@font/quicksand" />
+
+        <EditText
+            android:id="@+id/reminderNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter additional notes"
+            android:gravity="top"
+            android:layout_marginBottom="5dp"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textSize="20sp"
+                app:fontFamily="@font/quicksand"
+                android:layout_weight="0.1"/>
+
+            <EditText
+                android:id="@+id/what_reminder_date"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.9"
+                android:background="@color/white"
+                app:drawableEndCompat="@drawable/ic_arrow_right"
+                android:hint="Select Reminder Date"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveReminderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Reminder" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="dk.itu.fluffypal.HomeFragment"
+        android:label="Home Page" >
+        <action
+            android:id="@+id/action_home_to_petAdd1"
+            app:destination="@id/petAdd1" >
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecordFragment"
+        android:name="dk.itu.fluffypal.RecordFragment"
+        android:label="Record Page" />
+
+    <fragment
+        android:id="@+id/ReminderFragment"
+        android:name="dk.itu.fluffypal.ReminderFragment"
+        android:label="Reminder Page" />
+
+    <fragment
+        android:id="@+id/ManagementFragment"
+        android:name="dk.itu.fluffypal.ManagementFragment"
+        android:label="Management Page" />
+
+    <fragment
+        android:id="@+id/petAdd1"
+        android:name="dk.itu.fluffypal.PetAdd1Fragment"
+        android:label="Add Pet Page1">
+        <action
+            android:id="@+id/action_petAdd1_to_petAdd2"
+            app:destination="@id/petAdd2" >
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/petAdd2"
+        android:name="dk.itu.fluffypal.PetAdd2"
+        android:label="Add Pet Page2" >
+        <action
+            android:id="@+id/action_petAdd2_to_petAdd3" app:destination="@id/petAdd3">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/petAdd3"
+        android:name="dk.itu.fluffypal.PetAdd3"
+        android:label="Add Pet Page3" >
+        <action
+            android:id="@+id/action_petAdd3_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+
+
+</navigation>

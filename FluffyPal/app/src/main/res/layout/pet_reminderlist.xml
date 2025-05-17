@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pet_image_reminder"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fluffy"
+            app:shapeAppearanceOverlay="@style/CircleImage"/>
+
+        <TextView
+            android:id="@+id/reminder_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Reminder"
+            android:textColor="@color/black"
+            app:fontFamily="@font/quicksand_medium"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="3 days left"
+            android:textColor="@color/black"
+            app:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="5dp"
+            android:text="Planned Date:"
+            android:textColor="@color/black"
+            app:fontFamily="@font/quicksand"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/planned_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="2025-11-06"
+            android:textColor="@color/black"
+            app:fontFamily="@font/quicksand"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reminder_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="5dp"
+        android:text="Notes"
+        android:textColor="@color/black"
+        app:fontFamily="@font/quicksand"
+        android:textSize="14sp" />
+
+</LinearLayout>

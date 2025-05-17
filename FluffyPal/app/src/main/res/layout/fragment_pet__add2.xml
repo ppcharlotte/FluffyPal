@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PetAdd2"
+    android:background="#DEFFE6C6"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_pet"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:fontFamily="@font/quicksand_bold"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/animal_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_camera"
+        android:contentDescription="@string/add_pet"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/pet_name"
+        android:textSize="20sp"
+        app:fontFamily="@font/quicksand"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/what_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:hint="@string/enter_name_hint"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/pet_birthday"
+        android:textSize="20sp"
+        app:fontFamily="@font/quicksand"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/what_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        android:hint="@string/enter_birthday"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/date_of_arrival"
+        android:textSize="20sp"
+        app:fontFamily="@font/quicksand"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/what_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        android:hint="@string/arrival_hint"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_pet_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/back"
+            android:textSize="25sp"
+            android:layout_weight="0.3"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.4" />
+
+        <Button
+            android:id="@+id/add_pet_next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="@string/next"
+            android:textSize="25sp"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+</LinearLayout>

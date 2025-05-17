@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FluffyPal</string>
+    <string name="welcome">Welcome to FluffyPal</string>
+    <string name="start_pet_pic">Start_pic</string>
+    <string name="add_pet_hint">You haven\'t added any pet yet</string>
+    <string name="add_pet">Add Pet</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="fish">Fish</string>
+    <string name="hamster">Hamster</string>
+    <string name="bird">Bird</string>
+    <string name="others">Others</string>
+    <string name="other">Other</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="pet_birthday">Date of Birth</string>
+    <string name="enter_name_hint">Enter pet name</string>
+    <string name="enter_birthday">Select date of birth</string>
+    <string name="record_weight_date">Select Date of Weighing</string>
+    <string name="gender">Gender</string>
+    <string name="boy">Boy</string>
+    <string name="girl">Girl</string>
+    <string name="neutered">Spayed/Neutered</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="not_sure">Not Sure</string>
+    <string name="weight">Weight</string>
+    <string name="enter_weight">Enter your pet\'s weight</string>
+    <string name="kg">kg</string>
+    <string name="date_of_arrival">Date of Arrival</string>
+    <string name="arrival_hint">Select date of arrival</string>
+</resources>
